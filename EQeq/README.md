@@ -1,27 +1,27 @@
 # EQeq
 Charge equilibration method for crystal structures. Available from [here](https://github.com/WilmerLab/EQeq).
 
-###Summary
+### Summary
 
 The source code in this program demonstrates the charge equilibration method described
 in the accompanying paper. The purpose of the source code provided is to be
 minimalistic and do "just the job" described. In practice, you may wish to add various
 features to the source code to fit the particular needs of your project.
 
-####Major highlights of program:
+#### Major highlights of program:
 
  * Obtains charges for atoms in periodic systems without iteration
  * Can use non-neutral charge centers for more accurate point charges
  * Designed for speed (but without significant code optimizations)
 
-####Features not implemented but that you may want to consider adding:
+#### Features not implemented but that you may want to consider adding:
 
  * Spherical cut-offs (for both real-space and reciprocal-space sums)
  * An iterative loop that guesses the appropriate charge center (so the user does not have to guess)
  * Ewald parameter auto-optimization
  * Various code optimizations
 
-####Running the program:
+#### Running the program:
 
 Program expects two input files `ionization.dat` and `chargecenters.dat`. Please
 look at source code to see what the other optional inputs are for (should be
@@ -37,7 +37,7 @@ and run with
 ./eqeq my_file.cif
 ```
 
-####Python bindings
+#### Python bindings
 
 To facilitate automation and scaling, this version of EQeq can be operated via
 Python. To enable, you must build EQeq as a shared library:
@@ -87,7 +87,7 @@ with open("IRMOF-1.cif") as in_file:
     data = in_file.read()
 charges = EQeq.run(data, output_type="list", method="ewald")
 ```
-####Literature
+#### Literature
 [EQeq]: An Extended Charge Equilibration Method
 
 [EQeq+C]: An Empirical Bond-Order-Corrected Extended Charge Equilibration Method
