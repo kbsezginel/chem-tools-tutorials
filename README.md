@@ -4,7 +4,7 @@ Software tutorials for computational chemistry, data analysis and visualization.
 ### [Open Babel]
 Chemical toolbox to search, convert, analyze, or store data from molecular modeling, chemistry, solid-state materials, biochemistry, or related areas.
 
-### RASPA
+### [RASPA]
 A general purpose classical simulation package that can be used for the simulation of molecules in gases, fluids, zeolites, metal-organic frameworks, carbon nanotubes and external fields.
 
 ### [EQeq]
@@ -21,3 +21,5 @@ Python plotting library.
 
 [Open Babel]: https://github.com/kbsezginel/chem-tools-tutorials/tree/master/openbabel
 [EQeq]: https://github.com/kbsezginel/chem-tools-tutorials/tree/master/EQeq
+
+[RASPA]: https://github.com/kbsezginel/chem-tools-tutorials/tree/master/RASPA
