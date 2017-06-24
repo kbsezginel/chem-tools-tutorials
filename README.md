@@ -26,7 +26,7 @@ Visualization
 ### Blender
 Blender is the free and open source 3D creation suite.
 
-### Matplotlib
+### [Matplotlib]
 Python plotting library.
 
 [Open Babel]: https://github.com/kbsezginel/chem-tools-tutorials/tree/master/openbabel
@@ -35,3 +35,5 @@ Python plotting library.
 [RASPA]: https://github.com/kbsezginel/chem-tools-tutorials/tree/master/RASPA
 
 [HostDesigner]: https://github.com/kbsezginel/chem-tools-tutorials/tree/master/HostDesigner
+
+[Matplotlib]: https://github.com/kbsezginel/chem-tools-tutorials/tree/master/matplotlib
