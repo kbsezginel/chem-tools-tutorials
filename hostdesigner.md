@@ -29,8 +29,8 @@ Second, the executable must be provided the location of two required data files 
 
 For a bash user with username *hay* the steps are as follows:
 
-1. Put the executable *hd3.0* in a directory that is part of the user’s default path
-2. Add the following lines to *.bashrc* file:
+1.  Put the executable *hd3.0* in a directory that is part of the user’s default path
+2.  Add the following lines to *.bashrc* file:
 
 ```
 export PATH=“PATH:/Users/hay/bin”
@@ -91,8 +91,8 @@ All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted
 provided that the following conditions are met:
 
-1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+1.  Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.
+2.  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
 HostDesigner is provided by the authors “as is” and any express or implied warranties of
 merchantability and fitness for a particular purpose are disclaimed. In no event shall the authors
