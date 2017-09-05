@@ -10,16 +10,16 @@ features to the source code to fit the particular needs of your project.
 
 #### Major highlights of program:
 
- * Obtains charges for atoms in periodic systems without iteration
- * Can use non-neutral charge centers for more accurate point charges
- * Designed for speed (but without significant code optimizations)
+-   Obtains charges for atoms in periodic systems without iteration
+-   Can use non-neutral charge centers for more accurate point charges
+-   Designed for speed (but without significant code optimizations)
 
 #### Features not implemented but that you may want to consider adding:
 
- * Spherical cut-offs (for both real-space and reciprocal-space sums)
- * An iterative loop that guesses the appropriate charge center (so the user does not have to guess)
- * Ewald parameter auto-optimization
- * Various code optimizations
+-   Spherical cut-offs (for both real-space and reciprocal-space sums)
+-   An iterative loop that guesses the appropriate charge center (so the user does not have to guess)
+-   Ewald parameter auto-optimization
+-   Various code optimizations
 
 #### Running the program:
 
@@ -88,11 +88,7 @@ with open("IRMOF-1.cif") as in_file:
 charges = EQeq.run(data, output_type="list", method="ewald")
 ```
 #### Literature
-[EQeq]: An Extended Charge Equilibration Method
 
-[EQeq+C]: An Empirical Bond-Order-Corrected Extended Charge Equilibration Method
+[EQeq](http://pubs.acs.org/doi/abs/10.1021/jz3008485): An Extended Charge Equilibration Method
 
-
-
-[EQeq]: http://pubs.acs.org/doi/abs/10.1021/jz3008485
-[EQeq+C]: http://pubs.acs.org/doi/abs/10.1021/acs.jctc.5b00037
+[EQeq+C](http://pubs.acs.org/doi/abs/10.1021/acs.jctc.5b00037): An Empirical Bond-Order-Corrected Extended Charge Equilibration Method
