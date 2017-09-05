@@ -94,8 +94,7 @@ cd `raspa-dir`
 
 Edit the files here, and then re-run your simulations. If you make any
 improvements to the existing force fields, molecules, or structures, you should
-consider contributing them back to RASPA by issuing a
+consider contributing them back to RASPA by issuing a [pull request](https://help.github.com/articles/using-pull-requests/).
 
 ----------------------------------------------------------------------------------------------------
-[pull request](https://help.github.com/articles/using-pull-requests/).
 [raspa2-wlab]: https://github.com/WilmerLab/raspa2
