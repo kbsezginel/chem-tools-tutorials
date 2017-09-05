@@ -1,5 +1,5 @@
-[RASPA2]
-======
+[RASPA2][raspa2-wlab]
+=====================
 
 A general purpose classical simulation package that can be used for the
 simulation of molecules in gases, fluids, zeolites, aluminosilicates,
@@ -8,7 +8,7 @@ metal-organic frameworks, carbon nanotubes and external fields.
 Installation
 ============
 
-Like any other software library, [RASPA2] should be installed through a package
+Like any other software library, [RASPA2][raspa2-wlab] should be installed through a package
 manager. This can be done through pip.
 
 ```
@@ -95,6 +95,7 @@ cd `raspa-dir`
 Edit the files here, and then re-run your simulations. If you make any
 improvements to the existing force fields, molecules, or structures, you should
 consider contributing them back to RASPA by issuing a
-[pull request](https://help.github.com/articles/using-pull-requests/).
 
-[RASPA2]: https://github.com/WilmerLab/raspa2
+----------------------------------------------------------------------------------------------------
+[pull request](https://help.github.com/articles/using-pull-requests/).
+[raspa2-wlab]: https://github.com/WilmerLab/raspa2
