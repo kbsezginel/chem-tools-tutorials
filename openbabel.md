@@ -34,6 +34,21 @@ Usage information is available on [Pybel website][pybel-website].
 pip install pybel
 ```
 
+## Useful Commands
+
+#### Converting symmetry to P1 (filling unit cell)
+
+The following command can be used to convert any crystal with symmetry to P1 non-symmetric crystal filling unit cell with all atoms.
+```
+obabel -icif non-P1.cif -ocif -O P1.cif --fillUC strict
+```
+#### Exporting rendered molecule image
+
+Using the following command 2D rendering of given atomic coordinates of molecule in any format (`my-molecule.xyz`) is used to produce an image file (`my-molecule.svg`). 
+```
+obabel my-molecule.xyz -O my-molecule.svg -xS -xd -xb none
+```
+
 ----------------------------------------------------------------------------------------------------
 [obabel-website]: http://openbabel.org/
 [obabel-github]: https://github.com/openbabel/openbabel
