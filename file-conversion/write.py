@@ -1,5 +1,5 @@
 """
-Functions to write atomic coordinates in commmon chemical formats
+Functions to write atomic coordinates in commmon chemical formats.
 """
 import os
 

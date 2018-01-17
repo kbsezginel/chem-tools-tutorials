@@ -1,5 +1,5 @@
 """
-Convert symmetry to P1 and fill unit cell for given cif file.
+Convert symmetry to P1 and fill unit cell for given cif file using OpenBabel.
 
 Usage:
 python fill_unit_cell.py non-P1.cif P1.cif
