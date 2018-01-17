@@ -16,7 +16,9 @@ of atomic coordinates.
 ```
 filename = 'water.pdb'
 atoms = ['O', 'H', 'H']
-coordinates = [[0.0, 0.0, 0.0], [0.757, 0.586, 0.0]. [-0.757, 0.586, 0.0]]
+coordinates = [[0.0, 0.0, 0.0],
+               [0.757, 0.586, 0.0],
+               [-0.757, 0.586, 0.0]]
 
 write_pdb(filename, atoms, coordinates)
 ```
@@ -34,7 +36,7 @@ python xyz2cif.py mymolecule.xyz
 This would prompt the user to enter cell dimensions and an output file name for the cif file.
 
 ## Fill unit cell (P1 conversion)
-This script allows converting a unit cell to P1 space group. This means that the cell would be
+This script allows converting a unit cell to P1 space group using OpenBabel. This means that the cell would be
 filled with all atoms by applying all the symmetry operations. This is necessary for some software
 such as [lammps_interface](https://github.com/kbsezginel/lammps_interface) which is used to assign
 force field parameters.
