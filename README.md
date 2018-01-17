@@ -5,6 +5,8 @@ Software tutorials for computational chemistry, data analysis and visualization.
 
 Chemistry Tools
 ---------------
+### [File conversion][file-conversion]
+Python scripts for chemical file conversion and manipulation.
 
 ### [Open Babel][obabel-page]
 Chemical toolbox to search, convert, analyze, or store data from molecular modeling, chemistry, solid-state materials, biochemistry, or related areas.
@@ -39,3 +41,4 @@ Python plotting library.
 [raspa-page]: https://kbsezginel.github.io/chem-tools-tutorials/raspa
 [hd-page]: https://kbsezginel.github.io/chem-tools-tutorials/hostdesigner
 [matplotlib-page]: https://kbsezginel.github.io/chem-tools-tutorials/matplotlib
+[file-conversion]: https://kbsezginel.github.io/chem-tools-tutorials/file-conversion
