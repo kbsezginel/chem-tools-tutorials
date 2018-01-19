@@ -17,6 +17,9 @@ A general purpose classical simulation package that can be used for the simulati
 ### [EQeq][eqeq-page]
 Charge equilibration method for crystal structures.
 
+### [Packmol][packmol-page]
+PACKMOL creates an initial point for molecular dynamics simulations by packing molecules in defined regions of space.
+
 ### LAMMPS
 Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS) is a molecular dynamics program from Sandia National Laboratories.
 
@@ -41,4 +44,5 @@ Python plotting library.
 [raspa-page]: https://kbsezginel.github.io/chem-tools-tutorials/raspa
 [hd-page]: https://kbsezginel.github.io/chem-tools-tutorials/hostdesigner
 [matplotlib-page]: https://kbsezginel.github.io/chem-tools-tutorials/matplotlib
+[packmol-page]: https://kbsezginel.github.io/chem-tools-tutorials/packmol
 [file-conversion]: https://kbsezginel.github.io/chem-tools-tutorials/file-conversion
