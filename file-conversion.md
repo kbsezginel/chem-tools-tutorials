@@ -45,3 +45,19 @@ force field parameters.
 ```
 python fill_unit_cell.py non-P1.cif P1.cif
 ```
+
+## [Tinker](https://dasher.wustl.edu/tinker/)
+There are two scripts that allow conversion of tinker xyz file to regular xyz file.
+One (`tinker_to_xyz.py`) is for converting a single file and the other (`tinker_traj_xyz.py`) is
+for converting a set of tinker xyz files in a directory and collect them into a single xyz trajectory file.
+
+**Usage:**
+
+```
+# Convert single file to xyz (output file name is prompted)
+>>> python tinker_to_xyz.py
+
+# Convert multiple files to xyz trajectory
+# Input file basename, number of frames and output file name are prompted
+>>> python tinker_to_xyz.py
+```
