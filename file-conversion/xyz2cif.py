@@ -40,16 +40,18 @@ def read_xyz(file_name):
     return molecules
 
 
-def write_cif(file_name, atoms, coordinates, header='mol', cell=[1, 1, 1, 90, 90, 90], fractional=False):
+def write_cif(file_name, atoms, coordinates, header='mol', cell=[1, 1, 1, 90, 90, 90], fractional=False, spacegroup='P1'):
     """ Write given atomic coordinates to file in cif format """
     with open(file_name, 'w') as cif_file:
         cif_file.write('data_%s\n' % header)
-        cif_file.write('_cell_length_a                  %7.4f\n' % cell[0])
-        cif_file.write('_cell_length_b                  %7.4f\n' % cell[1])
-        cif_file.write('_cell_length_c                  %7.4f\n' % cell[2])
-        cif_file.write('_cell_angle_alpha               %7.4f\n' % cell[3])
-        cif_file.write('_cell_angle_beta                %7.4f\n' % cell[4])
-        cif_file.write('_cell_angle_gamma               %7.4f\n' % cell[5])
+        cif_file.write('_cell_length_a                   %7.4f\n' % cell[0])
+        cif_file.write('_cell_length_b                   %7.4f\n' % cell[1])
+        cif_file.write('_cell_length_c                   %7.4f\n' % cell[2])
+        cif_file.write('_cell_angle_alpha                %7.4f\n' % cell[3])
+        cif_file.write('_cell_angle_beta                 %7.4f\n' % cell[4])
+        cif_file.write('_cell_angle_gamma                %7.4f\n' % cell[5])
+        cif_file.write("_symmetry_space_group_name_Hall  '%s'\n" % spacegroup)
+        cif_file.write("_symmetry_space_group_name_H-M   '%s'\n" % spacegroup)
         cif_file.write('loop_\n')
         cif_file.write('_atom_site_label\n')
         cif_file.write('_atom_site_type_symbol\n')
