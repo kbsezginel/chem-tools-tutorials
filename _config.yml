@@ -5,6 +5,8 @@ show_downloads: True
 navigation:
   - title: KBS - Home
     url: http://kbsezginel.github.io
+  - title: Chem. tools tutorials
+  - url: /
   - title: File conversion
     url: file-conversion
   - title: OpenBabel

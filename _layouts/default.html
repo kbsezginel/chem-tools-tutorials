@@ -19,7 +19,11 @@
 
         <table>
           {% for nav in site.navigation %}
-            <tr><th><a href="{{ nav.url }}">{{ nav.title }}</a></th></tr>
+            {% if nav.url contains "://" %}
+              <tr><th><a href="{{ nav.url }}">{{ nav.title }}</a></th></tr>
+            {% else %}
+              <tr><th><a href="{{ nav.url | relative_url }}">{{ nav.title }}</a></th></tr>
+            {% endif %}
           {% endfor %}
         </table>
 
