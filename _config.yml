@@ -2,3 +2,20 @@ theme: jekyll-theme-minimal
 title: Chemistry tools tutorials/scripts
 description: Tutorials and scripts for several computational chemistry tools
 show_downloads: True
+navigation:
+  - title: KBS - Home
+    url: http://kbsezginel.github.io
+  - title: File conversion
+    url: file-conversion
+  - title: OpenBabel
+    url: openbabel
+  - title: RASPA
+    url: raspa
+  - title: EQeq
+    url: eqeq
+  - title: Packmol
+    url: packmol
+  - title: HostDesigner
+    url: hostdesigner
+  - title: Matplotlib
+    url: matplotlib
