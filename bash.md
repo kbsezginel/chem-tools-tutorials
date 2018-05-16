@@ -20,3 +20,17 @@ sed -i 'Ns/.*/replacement-line/' file_name
 # Write to a new file
 sed 'Ns/.*/replacement-line/' file_name > new_file
 ```
+
+## Loops
+
+#### Submit all jobs in all directories under directory
+
+Assuming your job submission file is *job.something* and you are using SLURM scheduler:
+```bash
+for i in `ls`
+do
+cd $i
+sbatch job.*
+cd ..
+done
+```
