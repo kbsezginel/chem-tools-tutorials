@@ -1,0 +1,22 @@
+framework: RUFMUA          # Name of cif file
+unitcell: [4, 3, 3]        # Unit cell replication
+temperature: 298           # System temperature (K)
+pressure: 1                # System pressure (bar)
+init_cycles: 5000          # Initialization MC cycles
+cycles: 10000              # Production MC cycles
+cutoff: 12                 # Cut-off radius (Angstrom)
+forcefield: UFF            # Force field definition
+charge: no                 # Use charges from cif file
+print_every: 1000          # Print data every n steps
+movies: yes                # Generate movies (snapshots)
+movies_every: 10000        # Generate movies enery n steps
+void_fraction: false       # Define void fraction for excess adsorption
+components:
+  - name: DMOG
+    definition: Drugs
+    mol_fraction: false    # Use only for mixture adsorption
+    p_translation: 1.0
+    p_rotation: 1.0
+    p_reinsertion: 1.0
+    p_swap: 1.0
+    create_molecules: 0
