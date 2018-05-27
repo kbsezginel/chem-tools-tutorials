@@ -1,7 +1,9 @@
 """
 Join RASPA movie output pdb files for the adsorbent and adsorbate.
+Creates a pdb file (not a trajectory!).
 
-Example: python raspa_join_movies.py framework.pdb adsorbate.pbd
+Usage:
+ >>> python raspa_join_movies.py framework.pdb adsorbate.pbd
 
 Typical RASPA movie output names:
 - framework: Framework_0_final.pdb
