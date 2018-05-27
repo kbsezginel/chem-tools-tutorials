@@ -29,8 +29,19 @@ Assuming your job submission file is *job.something* and you are using SLURM sch
 ```bash
 for i in `ls`
 do
-cd $i
-sbatch job.*
-cd ..
+sbatch $i/job.*
 done
+```
+
+## String and path stuff
+
+#### Split path
+```bash
+$ mypath='this/is/a/path/to/somewhere'
+
+$ basename $mypath
+somewhere
+
+$ dirname $mypath
+this/is/a/path/to
 ```
