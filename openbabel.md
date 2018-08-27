@@ -26,6 +26,9 @@ Python bindings for openbabel is available through pip.
 ```python
 pip install openbabel
 ```
+
+[Here is an example Jupyter Notebook that shows how to use `openbabel` Python bindings.](https://github.com/kbsezginel/chem-tools-tutorials/blob/master/openbabel/openbabel.ipynb)
+
 ### Python wrapper (pybel)
 There is also a python wrapper for openbabel which is also available through pip.
 Usage information is available on [Pybel website][pybel-website].
@@ -44,7 +47,7 @@ obabel -icif non-P1.cif -ocif -O P1.cif --fillUC strict
 ```
 #### Exporting rendered molecule image
 
-Using the following command 2D rendering of given atomic coordinates of molecule in any format (`my-molecule.xyz`) is used to produce an image file (`my-molecule.svg`). 
+Using the following command 2D rendering of given atomic coordinates of molecule in any format (`my-molecule.xyz`) is used to produce an image file (`my-molecule.svg`).
 ```
 obabel my-molecule.xyz -O my-molecule.svg -xS -xd -xb none
 ```
