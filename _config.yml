@@ -4,20 +4,22 @@ description: Tutorials and scripts for several computational chemistry tools
 show_downloads: True
 navigation:
   - title: KBS - Home
-    url: http://kbsezginel.github.io
+    url: https://kbsezginel.github.io
   - title: Chem. tools tutorials
-  - url: /
+  - url: https://kbsezginel.github.io/chem-tools-tutorials
   - title: File conversion
     url: file-conversion
+  - title: Matplotlib
+    url: matplotlib
   - title: OpenBabel
     url: openbabel
   - title: RASPA
     url: raspa
+  - title: LAMMPS
+    url: lammps
   - title: EQeq
     url: eqeq
   - title: Packmol
     url: packmol
   - title: HostDesigner
     url: hostdesigner
-  - title: Matplotlib
-    url: matplotlib

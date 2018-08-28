@@ -2,6 +2,8 @@
 Helper functions for initializing LAMMPS simulations.
 """
 import os
+import random
+import subprocess
 
 
 def change_job_name(input_lines, job_name):
@@ -72,3 +74,28 @@ def replace_lines(file_path, idx=[0], new_lines=['Hello!\n'], dest=None):
                 nf.write(line)
     else:
         print('Requested indices do not match given number of lines!!!')
+
+
+def check_lammps_sim(out_file, verbose=True):
+    """
+    Check if LAMMPS simulation is finished.
+    """
+    FINISHED = False
+    try:
+        with open(out_file, 'r') as f:
+            lines = f.readlines()
+        if 'Total wall time' in lines[-1]:
+            FINISHED = True
+    except Exception as e:
+        if verbose:
+            print(e)
+    # print(lines[-1])
+    return FINISHED
+
+
+def submit_simulation(sim_dir, job_file):
+    """
+    Submit LAMMPS simulation with Slurm scheduler.
+    """
+    subprocess.run(['sbatch', job_file], cwd=sim_dir)
+    pass
