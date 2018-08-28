@@ -6,11 +6,13 @@ navigation:
   - title: KBS - Home
     url: https://kbsezginel.github.io
   - title: Chem. tools tutorials
-  - url: https://kbsezginel.github.io/chem-tools-tutorials
+    url: /
   - title: File conversion
     url: file-conversion
-  - title: Matplotlib
-    url: matplotlib
+  - title: Visualization
+    url: https://kbsezginel.github.io/visualization/
+  - title: Avogadro
+    url: avogadro
   - title: OpenBabel
     url: openbabel
   - title: RASPA
