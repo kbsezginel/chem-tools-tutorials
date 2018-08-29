@@ -8,6 +8,9 @@ Chemistry Tools
 ### [File conversion][file-conversion]
 Python scripts for chemical file conversion and manipulation.
 
+### [Avogadro][avogadro-page]
+Cross-platform powerful molecular editor and visualization application.
+
 ### [Open Babel][obabel-page]
 Chemical toolbox to search, convert, analyze, or store data from molecular modeling, chemistry, solid-state materials, biochemistry, or related areas.
 
@@ -20,7 +23,7 @@ Charge equilibration method for crystal structures.
 ### [Packmol][packmol-page]
 PACKMOL creates an initial point for molecular dynamics simulations by packing molecules in defined regions of space.
 
-### LAMMPS
+### [LAMMPS][lammps-page]
 Large-scale Atomic/Molecular Massively Parallel Simulator (LAMMPS) is a molecular dynamics program from Sandia National Laboratories.
 
 ### [HostDesigner][hd-page]
@@ -29,20 +32,17 @@ A Program for the de Novo Structure-Based Design of Molecular Receptors with Bin
 ### ASE
 The Atomic Simulation Environment (ASE) is a set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations.
 
-Visualization
+[Visualization][viz-page]
 -------------
-
-### Blender
-Blender is the free and open source 3D creation suite.
-
-### [Matplotlib][matplotlib-page]
-Python plotting library.
+Visualization tutorials and example scripts can be found in [visualization page][viz-page].
 
 ---------------------------------------------------------------------------------------------------
-[obabel-page]: https://kbsezginel.github.io/chem-tools-tutorials/openbabel
-[eqeq-page]: https://kbsezginel.github.io/chem-tools-tutorials/eqeq
-[raspa-page]: https://kbsezginel.github.io/chem-tools-tutorials/raspa
-[hd-page]: https://kbsezginel.github.io/chem-tools-tutorials/hostdesigner
-[matplotlib-page]: https://kbsezginel.github.io/chem-tools-tutorials/matplotlib
-[packmol-page]: https://kbsezginel.github.io/chem-tools-tutorials/packmol
 [file-conversion]: https://kbsezginel.github.io/chem-tools-tutorials/file-conversion
+[avogadro-page]: https://kbsezginel.github.io/chem-tools-tutorials/avogadro
+[obabel-page]: https://kbsezginel.github.io/chem-tools-tutorials/openbabel
+[raspa-page]: https://kbsezginel.github.io/chem-tools-tutorials/raspa
+[eqeq-page]: https://kbsezginel.github.io/chem-tools-tutorials/eqeq
+[packmol-page]: https://kbsezginel.github.io/chem-tools-tutorials/packmol
+[lammps-page]: https://kbsezginel.github.io/chem-tools-tutorials/lammps
+[hd-page]: https://kbsezginel.github.io/chem-tools-tutorials/hostdesigner
+[viz-page]: https://kbsezginel.github.io/visualization
