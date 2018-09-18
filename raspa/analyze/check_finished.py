@@ -17,7 +17,7 @@ for i, mof in enumerate(os.listdir(run_dir)):
     mof_dir = os.path.join(run_dir, mof)
     ads_path = glob.glob(os.path.join(mof_dir, 'Output', 'System_0', '*.data'))
     if len(ads_path) > 0:
-        results = parse_output(ads_path, verbose=False, save=False)
+        results = parse_output(ads_path[0], verbose=False, save=False)
         all_results.append(results)
         if results['finished'] == True:
             finished += 1
