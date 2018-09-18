@@ -37,7 +37,7 @@ def write_raspa_slurm(slurm_file, jobname, walltime="24:00:00", cleanup=False, s
             raspa_slurm_file.write(
                 "storagedir='%s'\n" % storage_dir +
                 "simstorage=$storagedir/$SLURM_JOB_NAME\n" +
-                "mkdir $simstorage\n" +
+                "mkdir -p $simstorage\n" +
                 "python $scriptsdir/raspa_cleanup.py . $simstorage\n\n")
         raspa_slurm_file.write(
             "echo end_time: `date`\n" +
