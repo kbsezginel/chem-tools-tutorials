@@ -12,7 +12,9 @@ from ipmof.crystal import MOF
 
 MOF_DIR = '/home/kutay/Documents/Research/InnoCentive-H2-Storage/IPMOFs'
 RASPA_DIR = '/home/kutay/Documents/Research/InnoCentive-H2-Storage/RASPA'
-CONFIG = 'raspa_config_h2.yaml'
+CONFIG = '../config/raspa_config_h2.yaml'
+CLEANUP = True
+STORAGE = True
 
 
 def calculate_replication(mof, cutoff=12):
@@ -43,7 +45,7 @@ for cif in os.listdir(MOF_DIR):
 
     # Write RASPA job submission file
     job_file = os.path.join(sim_dir, 'job.raspa')
-    write_raspa_slurm(job_file, '%s' % (mof_name), walltime='24:00:00')
+    write_raspa_slurm(job_file, '%s' % (mof_name), walltime='24:00:00', cleanup=CLEANUP, storage=STORAGE)
 
     # Copy MOF file
     sim_cif = os.path.join(sim_dir, cif)

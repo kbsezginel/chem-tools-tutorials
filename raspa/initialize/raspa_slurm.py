@@ -5,7 +5,9 @@ Generates RASPA job submission file for slurm scheduler.
 # Date: Nov 2017
 
 
-def write_raspa_slurm(slurm_file, jobname, walltime="24:00:00"):
+def write_raspa_slurm(slurm_file, jobname, walltime="24:00:00", cleanup=False, storage=False,
+                      scripts_dir='/ihome/cwilmer/kbs37/git/chem-tools-tutorials/raspa',
+                      storage_dir='/zfs1/cwilmer/kbs37/RASPA/IPMOF/298K'):
     """
     Writes RASPA slurm file for simulating gas adsorption.
     Arguments:
@@ -23,9 +25,20 @@ def write_raspa_slurm(slurm_file, jobname, walltime="24:00:00"):
             "#SBATCH --job-name=%s\n" % jobname +
             "#SBATCH --output=out.raspa\n\n" +
             ". /ihome/cwilmer/kbs37/venv/ipmof/bin/activate\n" +
-            "echo JOB_ID: $SBATCH_JOBID JOB_NAME: $SBATCH_JOB_NAME\n" +
+            "echo JOB_ID: $SLURM_JOB_ID JOB_NAME: $SLURM_JOB_NAME\n" +
             "echo start_time: `date`\n" +
             "cd $SLURM_SUBMIT_DIR\n\n" +
-            "simulate simulation.input\n\n" +
+            "simulate simulation.input\n\n")
+        if cleanup:
+            raspa_slurm_file.write("scriptsdir='%s'\n" % scripts_dir)
+            if not storage:
+                raspa_slurm_file.write("python $scriptsdir/raspa_cleanup.py .\n\n")
+        if storage:
+            raspa_slurm_file.write(
+                "storagedir='%s'\n" % storage_dir +
+                "simstorage=$storagedir/$SLURM_JOB_NAME\n" +
+                "mkdir $simstorage\n" +
+                "python $scriptsdir/raspa_cleanup.py . $simstorage\n\n")
+        raspa_slurm_file.write(
             "echo end_time: `date`\n" +
             "exit\n")
