@@ -12,13 +12,8 @@ from raspa_slurm import write_raspa_slurm
 from ipmof.crystal import MOF
 
 
-MOF_DIR = '/home/kutay/Documents/Research/InnoCentive-H2-Storage/IPMOFs'
-RASPA_DIR = '/home/kutay/Documents/Research/InnoCentive-H2-Storage/singles'
 CORE_DIR = '/home/kutay/Documents/Research/MOFs/CORE_ALL'
-STORAGE_DIR = '/zfs1/cwilmer/kbs37/RASPA/IPMOF/singles'
 CONFIG = '../config/raspa_config_h2.yaml'
-CLEANUP = True
-STORAGE = True
 
 
 def calculate_replication(mof, cutoff=12):
@@ -32,11 +27,11 @@ with open(CONFIG, 'r') as rc:
 
 
 mofs_done = []
-for cif in os.listdir(MOF_DIR):
+for cif in os.listdir(raspa_config['mof_dir']):
     mofs = cif.split('_')[:2]
     for mof_name in mofs:
         if mof_name not in mofs_done:
-            sim_dir = os.path.join(RASPA_DIR, mof_name)
+            sim_dir = os.path.join(raspa_config['raspa_dir'], mof_name)
             possible_cifs = glob.glob(os.path.join(CORE_DIR, '%s*.cif' % mof_name))
             for cif_file in possible_cifs:
                 # Create new directory
@@ -52,8 +47,8 @@ for cif in os.listdir(MOF_DIR):
 
                 # Write RASPA job submission file
                 job_file = os.path.join(sim_dir, 'job.raspa')
-                write_raspa_slurm(job_file, '%s' % (mof_name), walltime='24:00:00', cleanup=CLEANUP,
-                                  storage=STORAGE, storage_dir=STORAGE_DIR)
+                write_raspa_slurm(job_file, '%s' % (mof_name), walltime='24:00:00', cleanup=raspa_config['cleanup'],
+                                  storage=raspa_config['storage'], storage_dir=raspa_config['storage_dir'])
 
                 # Copy MOF file
                 shutil.copy(cif_file, sim_dir)

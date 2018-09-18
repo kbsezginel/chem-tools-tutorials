@@ -1,6 +1,12 @@
-framework: RUFMUA          # Name of cif file
-unitcell: [4, 3, 3]        # Unit cell replication
-temperature: 77            # System temperature (K)
+mof_dir: '/home/kutay/Documents/Research/InnoCentive-H2-Storage/IPMOFs'
+raspa_dir: '/home/kutay/Documents/Research/InnoCentive-H2-Storage/ipmof-298'
+storage_dir: '/zfs1/cwilmer/kbs37/RASPA/IPMOF/ipmof-298'
+cleanup: true
+storage: true
+walltime: '24:00:00'
+framework: IRMOF-1         # Name of cif file
+unitcell: [2, 2, 2]        # Unit cell replication
+temperature: 298           # System temperature (K)
 pressure: 100              # System pressure (bar)
 init_cycles: 2000          # Initialization MC cycles
 cycles: 10000              # Production MC cycles
