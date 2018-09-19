@@ -10,7 +10,7 @@ import sys
 import glob
 
 
-def parse_output(data_file, verbose=False, save=False, loading='absolute'):
+def parse_output(data_file, verbose=False, save=False, loading='absolute', framework=None):
     """Parse output file for gas adsorption data.
     Args:
         data_file (str): path to RASPA simulation output file.
@@ -23,8 +23,11 @@ def parse_output(data_file, verbose=False, save=False, loading='absolute'):
     with open(data_file) as ads_data:
         data_lines = ads_data.readlines()
 
-    results = dict(ads={}, err={}, finished=False, warnings=[], components=[],
-                   framework=os.path.basename(data_file).split('_')[1])
+    results = dict(ads={}, err={}, finished=False, warnings=[], components=[])
+    if framework is not None:
+        results['framework'] = framework
+    else:
+        results['framework'] = os.path.basename(data_file).split('_')[1]
     for i, line in enumerate(data_lines):
         if 'Number of molecules:' in line:
             ads_start = i

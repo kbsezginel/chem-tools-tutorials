@@ -18,7 +18,7 @@ for i, mof in enumerate(os.listdir(run_dir)):
     # ads_path = glob.glob(os.path.join(mof_dir, 'Output', 'System_0', '*.data'))
     ads_path = os.path.join(mof_dir, 'raspa_out.data')
     if os.path.exists(ads_path):
-        results = parse_output(ads_path, verbose=False, save=False)
+        results = parse_output(ads_path, verbose=False, save=False, framework=mof)
         all_results.append(results)
         if results['finished'] == True:
             finished += 1
@@ -26,7 +26,7 @@ for i, mof in enumerate(os.listdir(run_dir)):
             warnings += 1
     else:
         not_started += 1
-print('\n\n----------------------------------------\n')
+print('\n----------------------------------------')
 print('%i / %i finished' % (finished, n_mofs))
 print('%i / %i warnings' % (warnings, n_mofs))
 print('%i / %i not_started' % (not_started, n_mofs))
