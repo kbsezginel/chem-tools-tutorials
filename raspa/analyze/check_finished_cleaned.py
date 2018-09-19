@@ -26,7 +26,7 @@ for i, mof in enumerate(os.listdir(run_dir)):
             warnings += 1
     else:
         not_started += 1
-
+print('\n\n----------------------------------------\n')
 print('%i / %i finished' % (finished, n_mofs))
 print('%i / %i warnings' % (warnings, n_mofs))
 print('%i / %i not_started' % (not_started, n_mofs))
