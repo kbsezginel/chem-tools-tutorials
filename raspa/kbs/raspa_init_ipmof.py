@@ -47,7 +47,8 @@ for cif in os.listdir(raspa_config['mof_dir']):
 
                 # Write RASPA job submission file
                 job_file = os.path.join(sim_dir, 'job.raspa')
-                write_raspa_slurm(job_file, '%s' % (mof_name), walltime='24:00:00', cleanup=raspa_config['cleanup'],
+                write_raspa_slurm(job_file, '%s-%i-%i' % (mof_name, raspa_config['pressure'], raspa_config['temperature']),
+                                  walltime='24:00:00', cleanup=raspa_config['cleanup'],
                                   storage=raspa_config['storage'], storage_dir=raspa_config['storage_dir'])
 
                 # Copy MOF file
