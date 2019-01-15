@@ -33,13 +33,15 @@ A Program for the de Novo Structure-Based Design of Molecular Receptors with Bin
 The Atomic Simulation Environment (ASE) is a set of tools and Python modules for setting up, manipulating, running, visualizing and analyzing atomistic simulations.
 
 [Visualization][viz-page]
--------------
+---------------
 Visualization tutorials and example scripts can be found in [visualization page][viz-page].
 
-[Other useful tools][others-path]
+Other useful tools
+------------------
 
 ### [Web Plot Digitizer](https://apps.automeris.io/wpd/)
 Super easy to use, amazing plot digitizer to read data from plot images.
+
 ---------------------------------------------------------------------------------------------------
 [file-conversion]: https://kbsezginel.github.io/chem-tools-tutorials/file-conversion
 [avogadro-page]: https://kbsezginel.github.io/chem-tools-tutorials/avogadro
