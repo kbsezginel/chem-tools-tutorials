@@ -36,6 +36,10 @@ The Atomic Simulation Environment (ASE) is a set of tools and Python modules for
 -------------
 Visualization tutorials and example scripts can be found in [visualization page][viz-page].
 
+[Other useful tools][others-path]
+
+### [Web Plot Digitizer](https://apps.automeris.io/wpd/)
+Super easy to use, amazing plot digitizer to read data from plot images.
 ---------------------------------------------------------------------------------------------------
 [file-conversion]: https://kbsezginel.github.io/chem-tools-tutorials/file-conversion
 [avogadro-page]: https://kbsezginel.github.io/chem-tools-tutorials/avogadro
